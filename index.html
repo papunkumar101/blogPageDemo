@@ -7,46 +7,74 @@
 
   <title>HTML</title>
   <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ultra&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@600&family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
- <div class="nav">
-    <img src="mylogo2.png" alt="pk logo">
-    <p id="date">date</p>
-  </div>
-  <h1>FUNNY DOG</h1>
-  <h2>Hyy guys what's up ...
-  today you looking nice..;)</h2>
-  <div id="time">time </div>
-  <div id="full">
-    <img src="tenor2.gif" id="images" alt="homeImage">
-  </div>
-  <div id="userFunction">
-    select time:<select id="plz" onchange="myfun()">
-      <option value="1">1-2am</option>
-      <option value="2">2-3am</option>
-      <option value="3">3-4am</option>
-      <option value="4">4-5am</option>
-      <option value="5">5-6am</option>
-      <option value="6">6-7am</option>
-      <option value="7">7-8am</option>
-      <option value="8">8-9am</option>
-      <option value="9">9-10am</option>
-      <option value="10">10-11am</option>
-      <option value="11">11-12am</option>
-      <option value="12">12-13am</option>
-    </select><br><br><hr>
-      ready for work(12-6am) :<input type="button" value="button1" id="button1" onclick="firstImage()"><br><br>
-     Let's go to office(8-12am)   :<input type="button" value="button2" onclick="secondImage()" id="button2"><br><br>
-    it's work time   (12-6am)   :<input type="button" value="button3" onclick="thirdImage()" id="button3"><br><br>
-   let's sleep       (press)  (6-4am)  :  <input type="button" value="button4" onclick="fourthImage()" id="button4"><br><br><hr>
-  </div>
-  <footer>
-    <p>&copy; pk creation 2020</p>
-  </footer>
-  
+ <div class="navBar">
+  <a href="#"> <img src="mylogo2.jpg" alt="my logo"></a>
+   <div class="navMenu">
+    <span  onclick="myfun()">&#9776;</span>
+     <ul id="icon"> 
+      <li><a href="http://localhost:7700/myProfile/index.html">HOME</a></li>
+      <li><a href="papunmahakul1999@gmail.com">CONTACT</a></li>
+      <li><a href="#">HELP</a></li>
+      <li><a href="#">MORE</a></li>
+      <li><a href="#"style="color:red;"><i>singup/singin</i></a></li>
+     </ul>
+   </div>
+ </div>
+ <div class="body">
+   <h2> <strong>PAPUN KUMAR</strong></h2><hr>
+   <p> 
+   Hey guys welcome to my profile .
+   “I am ambitious and driven. I thrive on challenge and constantly set goals for myself, so I have something to strive towards. I’m not comfortable with settling, and I’m always looking for an opportunity to do better and achieve greatness. In my previous role.
+   </p><br>
+   <p>
+      Desires employment with XYZ Inc. as a Front-End Developer, to be responsible producing high quality solutions for company customers; bringing deep understanding of Modern HTML, JavaScript, and CSS, and the software development life cycle; and strong ability to execute and implement standard software architecture patterns.
+   </p>
+   <div id="midImage">
+     <a href="mainImage.JPG"  style="width:100vh; height:50vh;"><img src="mainImage.JPG"alt="my team & me"></a>
+     <div id="containt"><h2>Memorable Day</h2> 
+        <h4>miss you guys</h4>
+     </div>
+   </div>
+   <p>
+   Desires employment with XYZ Inc. as a Front-End Developer, to be responsible producing high quality solutions for company customers; bringing deep understanding of Modern HTML, JavaScript, and CSS, and the software development life cycle; and strong ability to execute and implement standard software architecture patterns.
+   </p><br>
+   <div id="skillsworkOn">
+     <div id="skills"><h3><u>Skills</u></h3><br>
+       <ol type="i">
+         <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+       </ol>
+     </div>
+     <div id="workOn"> <h3><u>WorkOn</u></h3><br>
+       <ol>
+           <li>Advance Java</li>
+           <li>C#</li>
+           <li>jQuery</li> 
+           <li>SQL</li>
+       </ol>
+     </div>
+   </div>
+ </div>
+ <div id="aboutMe">
+   <div id="image"><img src="mypic.jpg" alt="my pic"></div>
+   <div="text"><h3>About Author:-</h3><p>hyy I'm a simple boy i think but don't you try to think that.. hahaha(thank you)<br>Without strong and vivid supporting details, it hardly matters what a great topic sentence a writer has created for a paragraph. It’s the supporting details, in the form of facts, descriptions, and examples, that back up the claim made in that sentence. The supporting details are important enough that you could think of them.</div>
+ </div>
+ <div id="ICONS">
+  <a href="https://www.facebook.com/profile.php?id=100009543947553" target="blank" class="fa fa-facebook"></a>
+  <a href=" https://twitter.com/PapunMahakul?s=09" class="fa fa-twitter"></a> 
+  <a href="https://www.linkedin.com/in/papun-mahakul-04b433190" class="fa fa-linkedin"></a>
+  <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a>
+ </div>
+ <footer>
+   <p>&copf; pk creation &copy; 2020</p>
+ </footer>
   <script src="main.js"></script>
 </body>
 </html>

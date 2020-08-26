@@ -1,76 +1,216 @@
-body {
-  padding: 0px;
-  margin: 0px;
-    font-size: 15pt;
-    background-color: #A5A9D8;
-    text-align: center;
-}
-h1{
-  color:#EE4586;
-  font-family:'Ultra', serif;
-}
-h2{
-  color:#E7BB47;
-  /*font-family: 'Permanent Marker', cursive;*/
-}
-#full{
-  background-color: #9095CF;
-  height: 350px;
-  width: 100%;
-  border: solid black 5px;
-  overflow: none;
+*{
+    margin: 0px;
+    padding:0px;
+   
 }
 
-#userFunction{
-  color: #9D6195;
+/*_________NAVIGATION BAR PART______*/ 
+
+
+.navBar{
+  background-color:#3C373B;
+  color: white;
+  padding:20px;
   
 }
-#date{
-  float:right;
+.navBar img{
+  height:55px;
+  float:left;
+  margin-left:2px 2px;
+  border-radius:25px;
+  box-shadow: 2px 2px #4F4949;
+  
 }
-#time{
-  background-color: #0D0D0E;
-  color: #C8CADF;
+.navMenu{
+ text-align: right;
+  
 }
-#button1 {
-    text-align: center;
-    border-radius:10px;
-    color: white;
-    background-color:#65357F;
+
+ul li{
+  display:inline-block;
+  list-style:none;
+  margin:20px;
 }
-#button2 {
+ul li a{
+   text-decoration:none;
+   color:white;
+}
+span{
+  color: #E8E9F1;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  margin: 0 20px;
+}
+@media only screen and (max-width:700px){
+  span{
+  display:block;
+}
+ul li{
+  display: block;
+}
+ul{
+  display:none;
+}
+}
+
+
+/*__________BODY PART___________*/ 
+
+.body{
+  background-color:#E7E7E7C9;
+  margin: 0px;
+  padding: 5px;
+ font-family: 'Bebas Neue', cursive;
+}
+#midImage{
+  position:relative;
+  
+}
+#midImage img{
+  margin: 0;
+ padding:5px 0px;
+ height:100%;
+ width: 100%;
+}
+h2{
+  text-shadow: 2px 2px #CF65558C;
+  font-family: 'Oswald', sans-serif;
+}
+#containt{
+  height:70%;
+  width: 90%;
+  padding: 5px;
+  color: #BCBED6;
+  background-color:#FFFFFF38;
+  position: absolute;
+  width: 80%;
+  top:15%;
+  left:10%;
+ border-radius:25px;
+ font-family: 'Dancing Script', cursive;
+}
+
+#containt h2{
+  padding-top:28%;
+  padding-left:15%;
+  text-shadow:2px 2px #5E52D4;
+  font-family: 'Dancing Script', cursive;
+}
+#containt h4 {
+  padding: 5% 30%;
+  color: #D35E36;
+  text-shadow: 2px 2px #CFD189;
+} 
+
+
+/*_________Listes___________*/  
+
+#skillsworkOn {
+ /* background-color: green;*/
+ height:200px;
+ width:100%;
+ position: relative;
+}
+#skills{
+  padding-top: 20px;
+  position: absolute;
+  float:left;
+ /* background-color: yellow;*/
+  height: 200px;
+  width: 50%;
   text-align: center;
-  border-radius: 10px;
-  color: white;
-  background-color: #65357F;
 }
-#button3 {
-  text-align: center;
-  border-radius: 10px;
-  color: white;
-  background-color: #65357F;
+#skills ol li{
+  text-decoration: none;
+  list-style-type: none;
 }
-#button4 {
-  text-align: center;
-  border-radius: 10px;
-  color: white;
-  background-color: #65357F;
+#workOn{
+ padding-top:20px;
+ float:right;
+/* background-color: red;*/
+ height:200px;
+ width: 50%;
+ text-align: center;
 }
-.nav{
- height:10vh;
-  width: 100%;
-  background-color:#9095CF;
-   border-radius:15px;
+#workOn ol li {
+  text-decoration: none;
+  list-style-type: none;
 }
-.nav img{
- margin: 2px 2px;
- display: block;
-  max-width: 90%;
-  max-height: 90%;
-  float: left;
-  text-align: center;
-}
-#full #images{
+
+
+/*________about me_______*/
+
+ #aboutMe{
+   margin:0;
+   padding:0;
+  position:relative;
+  height: 300px;
   max-width: 100%;
-  max-height: 100%;
+  background:url(bgImage.jpg);
+  border-radius:10px;
+  font-family: 'Dancing Script', cursive;
 }
+#image img{
+  float: left;
+  height:150px;
+  width: 150px;
+  border-radius:50%;
+  shape-outside:circle();
+  margin: 30px 20px 20px 3px;
+  font-family:'Oswald', sans-serif;
+}
+div #text p{
+  margin:0;
+  padding:0;
+  text-align: justify;
+  line-height:22px;
+
+}
+div#aboutMe #text h3{
+  text-align: center;
+  color: #FFFFFF;
+  /*padding: 3px 3px;*/
+  font-family: 'Oswald', sans-serif;
+}
+
+/*__________ICONS PART_______*/
+
+#ICONS{
+  text-align: center;
+  background-color:#3C373B;
+}
+.fa{
+  margin:5%;
+  padding: 5px;
+  font-size: 25%;
+  text-align: center;
+  text-decoration:none;
+  border-radius:50%;
+}
+.fa-facebook{
+  background-color: #2F3DDA;
+  color:#B2B4CD;
+}
+.fa-twitter{
+  background-color: #3DA1B8;
+  color: white;
+}
+.fa-linkedin{
+ background-color: #47B752;
+ color: white;
+}
+.fa-instagram{
+  background-color:#562851;
+  color: white;
+}
+
+/*_________FOOTER PART__________*/ 
+
+footer {
+  background-color: #1B1B1C;
+  color: white;
+  text-align: center;
+}
+
+
